@@ -860,5 +860,133 @@ gap: 60px;
 
 }
  /*End Recommende*/
- /*Start Top Videos*/
- /*End Top Videos*/
+ /*Start Stats*/
+ /* .stats
+ {
+padding-block: var(--section-padding);
+ }
+ .stats .container
+ {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+ }
+ .stats .container p
+ {
+
+ }
+ .stats .container .number
+ {
+
+ }
+ .stats .card
+ {
+    background-color: white;
+    padding: 30px 15px;
+    text-align: center;
+    position: relative;
+    opacity: 0.8;
+    transition: var(--main-transition);
+ }
+ .stats .card::before,
+ .stats .card::after
+ {
+    content: "";
+  position: absolute;
+  width: 2px;
+  background-color: var(--main-color);
+  transition: 1s;
+  height: 0;
+ }
+
+ .stats .card::before {
+    top: 0;
+    right: 0;
+  }
+  .stats .card::after {
+    left: 0;
+    bottom: 0;
+  }
+  .stats .card:hover {
+    opacity: 1;
+  }
+  .stats .card:hover::before,
+  .stats .card:hover::after {
+    height: 100%;
+  }
+  .stats .card .numebr {
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .stats .card .text {
+    color: var(--main-color);
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+  }
+ .stats h2 {
+    font-weight: bold;
+    font-size: 40px;
+    width: fit-content;
+    margin: 0 auto 50px;
+    position: relative;
+  } */
+ /*End Stats*/
+ /* تصميم القسم بالكامل */
+.stats {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to bottom, #0f172a, #1e293b);
+    color: white;
+}
+
+.stats h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* تصميم الكروت */
+.stats .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stats .container .card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.stats .container .card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.stats .container .card p {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #00ffcc;
+}
+
+.stats .container .numebr {
+    font-size: 35px;
+    font-weight: bold;
+    display: block;
+    color:#0ff;
+}
+
+.stats .container .text {
+    font-size: 17px;
+    opacity: 0.8;
+}
