@@ -1091,13 +1091,7 @@ background-color: #191919;
     color: #b9b9b9;
     transition: var(--transition);
   }
-  .footer .card .links li a::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\F101";
-    font-weight: 900;
-    margin-right: 10px;
-    color: var(--main-color);
-  }
+
   .footer .card .line {
     display: flex;
     align-items: center;
