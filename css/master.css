@@ -156,7 +156,6 @@ right: -30px;
   background: #121212;
   box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
   position: relative; /*عشان الميجا منيو*/
-  
 }
 @media (max-width:767px)
 {
@@ -217,6 +216,7 @@ display: flex;
     .header .main-nav {
       /* margin:auto; */
       margin-left: -9px;
+      width: 100%;
         }
   }
 .header .main-nav > li > a      /*عشان الميجا منيو*/
@@ -237,8 +237,8 @@ display: flex;
 @media (max-width: 767px) {
     .header .main-nav > li > a
  {
-      padding: 14px;
-      font-size: 16px;
+      padding: 12px;
+      font-size: 14px;
       height:110px;
       white-space: nowrap;
     }
